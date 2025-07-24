@@ -3,4 +3,4 @@ layout: tags
 icon: fas fa-tags
 order: 2
 ---
-tags: [nmap, privilege escalation]
+tags: [nmap, privilege escalation, vm]
