@@ -7,10 +7,6 @@ order: 4
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }
 
----
-layout: page
-title: Sobre Mim
-permalink: /about/
----
-
-Olá! Sou a Ana Silva e gosto de desafios de segurança como TryHackMe e CTFs...
+Hey! 
+My name is Ana Silva and I'm currently working on improving my knowledge in the field of cybersecurity.
+To achieve this, I’m combining theory with hands-on practice through various learning platforms and methodologies. Right now, I'm exploring TryHackMe rooms to strengthen my practical skills. In addition to that, I’m also taking C-Academy courses—such as the Secure Network Architect track—and actively seeking out other learning opportunities in the field.
