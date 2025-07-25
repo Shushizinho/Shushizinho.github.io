@@ -2,7 +2,9 @@
 layout: compress
 ---
 
-{% assign favicon_path = "/assets/img/favicons" | relative_url %}
+{% assign favicon_raw = "/assets/img/favicons" %}
+{% assign favicon_path = favicon_raw | relative_url %}
+
 
 
 {
