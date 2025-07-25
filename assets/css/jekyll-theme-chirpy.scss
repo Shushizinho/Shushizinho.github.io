@@ -2,12 +2,8 @@
 ---
 
 /* prettier-ignore */
-{%- if jekyll.environment == 'production' -%}
-@import "main.bundle";
-{%- else -%}
-@import "main";
-{%- endif -%}
+@import "main{% if jekyll.environment == 'production' %}.bundle{% endif %}";
 
-
-@import '../../_sass/custom/sidebar';
-@import '../../_sass/custom/panel';
+// Custom overrides
+@import "../../_sass/custom/sidebar";
+@import "../../_sass/custom/panel";
