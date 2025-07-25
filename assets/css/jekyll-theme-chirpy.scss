@@ -2,13 +2,12 @@
 ---
 
 /* prettier-ignore */
-@use 'main
 {%- if jekyll.environment == 'production' -%}
-  .bundle
+@import "main.bundle";
+{%- else -%}
+@import "main";
 {%- endif -%}
-';
 
 
-/* Import your custom SCSS after the main theme styles */
 @import '../../_sass/custom/sidebar';
 @import '../../_sass/custom/panel';
