@@ -4,4 +4,4 @@
 /* prettier-ignore */
 @import "main{% if jekyll.environment == 'production' %}.bundle{% endif %}";
 @import "../../_sass/custom/sidebar";
-@import "../../_sass/custom/panel";
+@import "../../_sass/custom/painel";
