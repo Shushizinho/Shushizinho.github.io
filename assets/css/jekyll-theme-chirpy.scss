@@ -8,4 +8,7 @@
 {%- endif -%}
 ';
 
-/* append your custom style below */
+
+/* Import your custom SCSS after the main theme styles */
+@import 'custom/sidebar';
+@import 'custom/panel';
