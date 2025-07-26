@@ -3,7 +3,12 @@ title: "Cheese CTF Room"
 date: 2025-07-25
 categories: [TryHackMe]
 tags: [vm, ctf, nmap, linux, reverse shell, privilege escalation]
+excerpt: "Cheese CTF Room TryHackMe"
 ---
+
+# Introduction
+
+This is my resolution of Cheese CTF Room of TryHackMe.
 
 # Scanning the target
 
