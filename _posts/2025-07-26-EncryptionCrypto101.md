@@ -16,15 +16,15 @@ Open my Kali-linux vm and connected to TryHackMe via VPN (see more in [Setup Kal
 
 Dowload the RSA TryHackMe file 
 
-![RSA file](image.png)
+![RSA file](../assets/img/image.png)
 
 To crack the password using John the Ripper I cloned the repo using: 
 
-![alt text](image-1.png)
+![alt text](../assets/img/image-1.png)
 
 Using Rockyou to crack it:
 
-![alt text](image-2.png)
+![alt text](../assets/img/image-2.png)
 
 As it shows, the password is "delicious".
 
@@ -36,19 +36,19 @@ Resume:
 
 Unziping the task files:
 
-![alt text](image-3.png)
+![alt text](../assets/img/image-3.png)
 
 Then, import the key:
 
-![alt text](image-4.png)
+![alt text](../assets/img/image-4.png)
 
 And decrypt the file:
 
-![alt text](image-5.png)
+![alt text](../assets/img/image-5.png)
 
 Finally, viewing the file content:
 
-![alt text](image-6.png)
+![alt text](../assets/img/image-6.png)
 
 
 
