@@ -2,7 +2,7 @@
 title: "Encryption - Crypto 101"
 date: 2025-07-26
 categories: [TryHackMe]
-tags: [info, vm, linux, gpg, jhonTheRipper]
+tags: [info, vm, linux, ssh, gpg, jhonTheRipper]
 excerpt: "Encryption - Crypto 101 Room TryHackMe"
 ---
 
