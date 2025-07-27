@@ -291,7 +291,7 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 
 Note that output redirection is not supported within the console environment.
 
-**Help System**
+#### Help System
 
 The help command provides assistance for specific commands or general usage:
 ```bash
@@ -306,7 +306,7 @@ datastore.  Use -g to operate on the global datastore.
 ```
 {: file="Help Command Output"}
 
-**Command History**
+#### Command History
 
 Track previously executed commands using the history command:
 ```bash
@@ -319,9 +319,11 @@ bashmsf6 > history
 ```
 {: file="Command History Display"}
 
-**Context-Based Operation**
+#### Context-Based Operation
  1. Module Context
+
 Metasploit operates using contexts - when you select a module, the prompt changes to reflect your current working context:
+
 ```bash
 bashmsf6 > use exploit/windows/smb/ms17_010_eternalblue 
 [*] No payload configured, defaulting to windows/x64/meterpreter/reverse_tcp
@@ -331,6 +333,7 @@ msf6 exploit(windows/smb/ms17_010_eternalblue) >
 
 2. Viewing Options
 Use show options to display configurable parameters for the current module:
+
 ```bash
 bashmsf6 exploit(windows/smb/ms17_010_eternalblue) > show options
 
@@ -355,7 +358,9 @@ Payload options (windows/x64/meterpreter/reverse_tcp):
 {: file="Module Options Display"}
 
 3. Compatible Payloads
+
 View available payloads for the current exploit using show payloads:
+
 ```bash
 bashmsf6 exploit(windows/smb/ms17_010_eternalblue) > show payloads
 
@@ -373,7 +378,9 @@ Compatible Payloads
 {: file="Available Payloads List"}
 
 4. Module Information
+
 Get detailed information about any module using the info command:
+
 ```bash
 bashmsf6 exploit(windows/smb/ms17_010_eternalblue) > info
 
@@ -398,7 +405,9 @@ References:
 ### Search Functionality
 
 1. Basic Search
+
 The search command is essential for finding relevant modules:
+
 ```bash
 bashmsf6 > search ms17-010
 
@@ -415,7 +424,9 @@ Matching Modules
 {: file="Search Results Display"}
 
 2. Filtered Search
+
 Use keywords to filter search results by type, platform, or other criteria:
+
 ```bash
 bashmsf6 > search type:auxiliary telnet
 
@@ -433,6 +444,7 @@ Matching Modules
 
 
 ### Exploit Ranking System
+
 Exploits are ranked based on reliability:
 
 | Ranking | Description |
