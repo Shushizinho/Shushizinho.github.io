@@ -4,7 +4,7 @@
 platforms:
   - type: linkedin
     icon: "fab fa-linkedin"   
-    link: "https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}"
+    link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"
 
   - type: Facebook
     icon: "fab fa-facebook-square"
