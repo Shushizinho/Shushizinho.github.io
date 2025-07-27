@@ -3,7 +3,7 @@
 
 platforms:
   - type: LinkedIn
-    icon: "fa-brands fa-square-x-Linkedin"
+    icon: "fab fa-Linkedin"
     link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"
 
 
