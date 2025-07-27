@@ -2,10 +2,9 @@
 #  Icons from <https://fontawesome.com/>
 
 platforms:
-  - type: LinkedIn
+  - type: linkedin
     icon: "fab fa-linkedin"   
-    link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"
-
+    link: "https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}"
 
   - type: Facebook
     icon: "fab fa-facebook-square"
