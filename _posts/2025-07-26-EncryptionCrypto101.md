@@ -120,18 +120,20 @@ Crack the password with John The Ripper and rockyou, what's the passphrase for t
   <figcaption><em>Download and view of the SSH Private Ket file</em></figcaption>
 </figure>
 
-![SSH file](../assets/img/Encrypto101_SSHKey.png)<br>
-_Download and view of the SSH Private Ket file_
 
 3. To crack the password using John the Ripper I cloned the repo using: 
 
-![Jhon The Ripper](../assets/img/Encrypto101_JTR.png) <br>
-_Clone Jhon The Ripper repo_
+<figure class="text-center">
+  <img src="../assets/img/Encrypto101_JTR.png" alt="Jhon The Ripper">
+  <figcaption><em>Clone Jhon The Ripper repo</em></figcaption>
+</figure>
 
 4. Using Rockyou to crack it:
 
-![Rockyou](../assets/img/Encrypto101_Rockyou.png)<br>
-_Using rockyou.txt and getting the password_
+<figure class="text-center">
+  <img src="../assets/img/Encrypto101_Rockyou.png" alt="Rockyou">
+  <figcaption><em>Using rockyou.txt and getting the password</em></figcaption>
+</figure>
 
 I used the rockyou.txt wordlist because it's one of the most popular real-world password lists, leaked from a historical data breach. It contains millions of common passwords that people actually use, making it highly effective for dictionary-based attacks in tools like John the Ripper.
 
@@ -152,24 +154,33 @@ Time to try some GPG. Download the archive attached and extract it somewhere sen
 
 1. Download the file and unziping the task files:
 
-![Unziping GPG files](../assets/img/Encrypto101_UnzipGPG.png)<br>
-_Unziping GPG files_
+<figure class="text-center">
+  <img src="../assets/img/Encrypto101_UnzipGPG.png" alt="Unziping GPG files">
+  <figcaption><em>Unziping GPG files</em></figcaption>
+</figure>
 
 2. Then, import the key:
 
-![alt text](../assets/img/Encrypto101_ImportKey.png)<br>
-_Importing tryhackme.key_
+<figure class="text-center">
+  <img src="../assets/img/Encrypto101_ImportKey.png" alt="alt text">
+  <figcaption><em>Importing tryhackme.key</em></figcaption>
+</figure>
+
 
 3. And decrypt the file:
 
-![Decrypt the GPG File](../assets/img/Encrypto101_GPGFile.png)<br>
-_Decrypt the GPG File_
-
+<figure class="text-center">
+  <img src="../assets/img/Encrypto101_GPGFile.png" alt="Decrypt the GPG File">
+  <figcaption><em>Decrypt the GPG File</em></figcaption>
+</figure>
 
 4. Finally, viewing the file content:
 
-![Message](../assets/img/Encrypto101_Message.png)<br>
-_Message decoded_
+<figure class="text-center">
+  <img src="../assets/img/Encrypto101_Message.png" alt="Message">
+  <figcaption><em>Message decoded</em></figcaption>
+</figure>
+
 
 > **Answer:** `Pineapple`
 

@@ -18,10 +18,18 @@ I used Nmap command to scan for open ports on the target machine and discovered 
 - Port 22: SSH service
 - Port 80: HTTP web server
 
-![Nmap command](../assets/img/CheeseCTF_nmap.png)
+
+<figure class="text-center">
+  <img src="../assets/img/CheeseCTF_nmap.png" alt="Nmap command">
+  <figcaption><em>Nmap command</em></figcaption>
+</figure>
 
 Exploring the HTTP connection, I found a page with login: 
-![Cheese CTF page](../assets/img/CheeseCTF_login.png)
+
+<figure class="text-center">
+  <img src="../assets/img/CheeseCTF_login.png" alt="Cheese CTF page">
+  <figcaption><em>Cheese CTF page</em></figcaption>
+</figure>
 
 # SQL Injection
 
@@ -32,7 +40,11 @@ sqlmap -u "http://10.10.205.255/login.php" --data="username=test&password=test" 
 
 Sqlmap tests if any parameters (username, password, or the URL itself) are vulnerable to SQL injection.
 
-![sqlmap results](../assets/img/CheeseCTF_sqlmap.png)
+
+<figure class="text-center">
+  <img src="../assets/img/CheeseCTF_sqlmap.png" alt="sqlmap results">
+  <figcaption><em>Sqlmap results</em></figcaption>
+</figure>
 
 After these results, I could realise what the username and password were so I tried: ```' || 1=1;-- -``` as the username and ```'``` as password and get in!!
 
@@ -63,7 +75,12 @@ After this I write ```cat user.txt``` and find the firts THM flag!!
 
 For the root.txt flag, I started with sudo command:
 
-![Sudo command](../assets/img/CheeseCTF_sudoCommand.png)
+
+<figure class="text-center">
+  <img src="../assets/img/CheeseCTF_sudoCommand.png" alt="Sudo command">
+  <figcaption><em>Sudo command</em></figcaption>
+</figure>
+
 
 So, I explored the exploit.timer file, and edit it to ```OnBootSec=5s```.
 
@@ -75,7 +92,12 @@ sudo systemctl daemon-reexec
 sudo systemctl start exploit.timer
 ```
 After confirming that the timer was active, I explored exploit.service:
-![exploit.service](../assets/img/CheeseCTF_exploitService.png)
+
+<figure class="text-center">
+  <img src="../assets/img/CheeseCTF_exploitService.png" alt="exploit.service">
+  <figcaption><em>Exploit.service</em></figcaption>
+</figure>
+
 
 I went digging and found this [XXD Documentation](https://gtfobins.github.io/gtfobins/xxd/?source=post_page-----5c1e2193880b---------------------------------------)
 
