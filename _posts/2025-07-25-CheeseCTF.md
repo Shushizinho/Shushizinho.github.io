@@ -6,11 +6,11 @@ tags: [vm, ctf, nmap, linux, reverse shell, privilege escalation]
 excerpt: "Cheese CTF Room TryHackMe"
 ---
 
-# Introduction
+## Introduction
 
 This is my resolution of Cheese CTF Room of TryHackMe.
 
-# Scanning the target
+## Scanning the target
 
 I used Nmap command to scan for open ports on the target machine and discovered three accessible ports:
 
@@ -31,7 +31,7 @@ Exploring the HTTP connection, I found a page with login:
   <figcaption><em>Cheese CTF page</em></figcaption>
 </figure>
 
-# SQL Injection
+## SQL Injection
 
 I suspected an SQL injection vulnerability, so I started testing with sqlmap:
 ```
@@ -48,7 +48,7 @@ Sqlmap tests if any parameters (username, password, or the URL itself) are vulne
 
 After these results, I could realise what the username and password were so I tried: ```' || 1=1;-- -``` as the username and ```'``` as password and get in!!
 
-# Reverse Shell Access
+## Reverse Shell Access
 
 Then, to get a Reverse Shell, I generated a PHP payload with the command:
 ```
@@ -62,7 +62,7 @@ Then, I sent the payload to the server using:: ```curl "http://10.10.187.67/secr
 Open another terminal and run ```rlwrap nc -lvnp 4444```
 And it's possible to enter the target machine!!
 
-# File Exploration
+## File Exploration
 
 Now to explore the files, always got "Permission denied" erros. So,  searched for writable files and found that ```~/.ssh/authorized_keys``` was writable, where ussually the SSH keys are saved.
 
@@ -71,7 +71,7 @@ On my own machine, I got my SSH public key with ```cat ~/.ssh/id_rsa.pub```, and
 
 After this I write ```cat user.txt``` and find the firts THM flag!!
 
-# Sudo + Timer Exploit
+## Sudo + Timer Exploit
 
 For the root.txt flag, I started with sudo command:
 
@@ -103,5 +103,5 @@ I went digging and found this [XXD Documentation](https://gtfobins.github.io/gtf
 
 After a few tries I was abel to get the flag with ```opt/xxd "$LFILE" | xxd -r```!!
 
-# Conclusion
+## Conclusion
 This room was a fun mix of enumeration, SQLi exploitation, reverse shell tactics, and a clever privilege escalation via systemd timers.

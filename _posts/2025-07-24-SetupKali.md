@@ -5,7 +5,7 @@ categories: [TryHackMe]
 tags: [vm]
 ---
 
-# Setting Up a Kali Linux VM for TryHackMe on Hyper-V
+## Setting Up a Kali Linux VM for TryHackMe on Hyper-V
 
 This guide outlines how to set up a Kali Linux virtual machine using **Hyper-V** on Windows, and how to connect it to **TryHackMe** via OpenVPN.
 
@@ -14,7 +14,7 @@ This guide outlines how to set up a Kali Linux virtual machine using **Hyper-V**
 ---
 
 
-## Hyper-v Setup
+### Hyper-v Setup
 
 To run Hyper-v, make sure to meet these requirements:
 
@@ -31,7 +31,7 @@ In the control Painel, go to **Programs and Features** and, in the left pane, cl
 
 ![Hyper-V Settings](../assets/img/painelControl.png)
 
-## Creating the Kali Linux VM
+### Creating the Kali Linux VM
 
 First, download the kali-linux image in [kali-linux image](https://www.kali.org/get-kali/#kali-platforms) **Installer Images**.
 
@@ -39,7 +39,7 @@ Then, it's necessary to have an virtual network that allows the connection betwe
 
 After this, I create the Kali VM using the virtual network and the kali.iso iamge and configurated the machine following [kali-VM-Configuration](https://www.kali.org/docs/installation/hard-disk-install/).
 
-## Connecting to TryHackMe
+### Connecting to TryHackMe
 
 Download the VPN configuration file in the **Access** tab of TryHackMe account. 
 
@@ -61,7 +61,7 @@ The connection was established and in the TryHackMe Access page I could see the 
 
 ----
 
-## Q&A
+### Q&A
 
 - Do I need to keep the terminal tab open after running the VPN command?
 

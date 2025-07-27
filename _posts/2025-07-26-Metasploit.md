@@ -6,11 +6,11 @@ tags: [info, metasploit]
 excerpt: "Metasploit: Introduction Room TryHackMe"
 ---
 
-# Introduction
+## Introduction
 
 This post will provide a solid foundation for using Metasploit Framework, covering how to find and use exploits, using the `Metasploit: Introduction` TryHackMe Room.
 
-# Task 1: Introduction to Metasploit
+### Task 1: Introduction to Metasploit
 
 **Metasploit** is a powerful and widely used exploitation framework for penetration testing. 
 It comes in two versions: 
@@ -23,7 +23,7 @@ No answer needed
 > **Answer:** `No answer needed`
 
 
-# Task 2: Main Components of Metasploit
+### Task 2: Main Components of Metasploit
 
 #### Core Concepts
 
@@ -235,9 +235,9 @@ What are self-contained payloads called?
 Is "windows/x64/pingback_reverse_tcp" among singles or staged payload?
 > **Answer:** `Singles` <br>
 
-# Task 3: Msfconsole
+## Task 3: Msfconsole
 
-## Launching Metasploit Console
+### Launching Metasploit Console
 The Metasploit console is launched using the msfconsole command, which provides the primary interface for interacting with all framework modules.
 
 ```bash
@@ -270,7 +270,7 @@ msf6 >
 
 The console displays version information and module counts, then presents the msf6 > prompt for command input.
 
-## Basic Console Features
+### Basic Console Features
 **Linux Command Support**
 The msfconsole supports most standard Linux commands directly within the interface:
 ```bash
@@ -395,7 +395,7 @@ References:
 {: file="Module Information Display"}
 
 
-## Search Functionality
+### Search Functionality
 
 1. Basic Search
 The search command is essential for finding relevant modules:
@@ -432,7 +432,7 @@ Matching Modules
 {: file="Filtered Search Results"}
 
 
-## Exploit Ranking System
+### Exploit Ranking System
 Exploits are ranked based on reliability:
 
 | Ranking | Description |
@@ -457,10 +457,10 @@ How would you search for a module related to Apache?
 How would you search for a module related to Apache?
 > **Answer:** `todb` <br>
 
-# Task 4: Working with modules
+## Task 4: Working with modules
 
 
-## Understanding Metasploit Prompts
+### Understanding Metasploit Prompts
 
 Metasploit uses different command prompts to indicate your current context:
 
@@ -472,11 +472,11 @@ Metasploit uses different command prompts to indicate your current context:
 | `meterpreter >` | Meterpreter session | Interactive session with target |
 | `C:\Windows\system32>` | Target shell | Command shell on compromised system |
 
-## Setting Module Parameters
+### Setting Module Parameters
 
 All parameters use the same syntax: `set PARAMETER_NAME VALUE`
 
-### Common Parameters
+#### Common Parameters
 
 - **RHOSTS**: Target system IP address(es) - supports single IPs, CIDR notation, ranges, or file lists
 - **RPORT**: Target port where the vulnerable service is running
@@ -485,7 +485,7 @@ All parameters use the same syntax: `set PARAMETER_NAME VALUE`
 - **LPORT**: Local port for reverse connections
 - **SESSION**: Session ID for post-exploitation modules
 
-### Parameter Management
+#### Parameter Management
 
 ```bash
 msf6 exploit(windows/smb/ms17_010_eternalblue) > set rhosts 10.10.165.39
@@ -503,7 +503,7 @@ Module options (exploit/windows/smb/ms17_010_eternalblue):
 ```
 {: file="Setting Module Parameters"}
 
-### Global Variables
+#### Global Variables
 
 Use `setg` to set parameters globally across all modules:
 
@@ -522,7 +522,7 @@ Module options (auxiliary/scanner/smb/smb_ms17_010):
 ```
 {: file="Global Parameter Setting"}
 
-### Parameter Commands
+#### Parameter Commands
 
 - `set PARAM VALUE` - Set parameter for current module
 - `setg PARAM VALUE` - Set parameter globally
@@ -530,9 +530,9 @@ Module options (auxiliary/scanner/smb/smb_ms17_010):
 - `unset all` - Clear all parameters
 - `unsetg PARAM` - Clear global parameter
 
-## Running Modules
+### Running Modules
 
-### Execution Commands
+#### Execution Commands
 
 - `exploit` or `run` - Execute the module
 - `exploit -z` - Execute and background the session immediately
@@ -551,9 +551,9 @@ msf6 exploit(windows/smb/ms17_010_eternalblue) > exploit -z
 ```
 {: file="Exploit Execution Output"}
 
-## Session Management
+### Session Management
 
-### Working with Sessions
+#### Working with Sessions
 
 Once an exploit succeeds, it creates a session - the communication channel between your system and the target.
 
@@ -570,7 +570,7 @@ Active sessions
 ```
 {: file="Active Sessions List"}
 
-### Session Commands
+#### Session Commands
 
 - `sessions` - List all active sessions
 - `sessions -i [ID]` - Interact with specific session
@@ -605,7 +605,7 @@ What command would you use to clear a set payload?
 What command do you use to proceed with the exploitation phase?
 > **Answer:** `exploit` <br>
 
-# Task 5: Summary
+## Task 5: Summary
 
 No answer needed.
 > **Answer:** `No answer needed` <br>

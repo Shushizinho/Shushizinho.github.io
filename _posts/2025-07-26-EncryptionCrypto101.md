@@ -6,11 +6,11 @@ tags: [info, vm, linux, ssh, gpg, jhonTheRipper]
 excerpt: "Encryption - Crypto 101 Room TryHackMe"
 ---
 
-# Introduction
+## Introduction
 
 This is my resolution of Encryption - Crypto 101 room of TryHackMe.
 
-# Task 1: What will this room cover?
+## Task 1: What will this room cover?
 
 This room will cover:
 
@@ -24,7 +24,7 @@ This room will cover:
 > **Answer:** `No answer needed`
 
 
-# Task 2: Key terms
+## Task 2: Key terms
 
 I agree not to complain too much about how theory heavy this room is.
 
@@ -36,7 +36,7 @@ Are SSH keys protected with a passphrase or a password?
 > **Answer:** `passphrase` <br>
 Separate to the key, a passphrase is similar to a password and used to protect a key.
 
-# Task 3: Why is Encryption important?
+## Task 3: Why is Encryption important?
 
 What does SSH stand for?
 > **Answer:** `Secure Shell` <br>
@@ -50,7 +50,7 @@ What is the main set of standards you need to comply with if you store or proces
 Standards like PCI-DSS state that the data should be encrypted both at rest (in storage) AND while being transmitted. If you’re handling payment card details, you need to comply with these PCI regulations.
 
 
-# Task 4: Crucial Crypto Maths
+## Task 4: Crucial Crypto Maths
 
 What's 30 % 5?
 > **Answer:** `0` <br>
@@ -61,7 +61,7 @@ What's 30 % 5?
 What's 118613842 % 9091
 > **Answer:** `3565` <br>
 
-# Task 5: Types of Encryption
+## Task 5: Types of Encryption
 
 Should you trust DES? Yea/Nay
 > **Answer:** `Nay` <br>
@@ -77,7 +77,7 @@ Is it ok to share your public key? Yea/Nay
 > **Answer:** `Yea` <br>
 Asymmetric encryption uses a pair of keys, one to encrypt and the other in the pair to decrypt. Examples are RSA and Elliptic Curve Cryptography. Normally these keys are referred to as a public key and a private key. Data encrypted with the private key can be decrypted with the public key, and vice versa. Your private key needs to be kept private, hence the name.
 
-# Task 6: RSA - Rivest Shamir Adleman
+## Task 6: RSA - Rivest Shamir Adleman
 
 p = 4391, q = 6659. What is n?
 > **Answer:** `29239669`  <br>
@@ -87,18 +87,18 @@ The key variables that you need to know about for RSA in CTFs are p, q, m, n, e,
 I understand enough about RSA to move on, and I know where to look to learn more if I want to.
 > **Answer:** `No answer needed`
 
-# Task 7: Establishing Keys Using Asymmetric Cryptography
+## Task 7: Establishing Keys Using Asymmetric Cryptography
 
 I understand how keys can be established using Public Key (asymmetric) cryptography.
 > **Answer:** `No answer needed`
 
-# Task 8: Digital signatures and Certificates
+## Task 8: Digital signatures and Certificates
 
 What can you use to verify that a file has not been modified and is the authentic file as the author intended?
 > **Answer:** `Digital Signature`  <br>
 Digital signatures are a way to prove the authenticity of files, to prove who created or modified them
 
-# Task 9: SSH Authentication
+## Task 9: SSH Authentication
 
 I recommend giving this a go yourself. Deploy a VM, like Linux Fundamentals 2 and try to add an SSH key and log in with the private key.
 > **Answer:** `No answer needed`
@@ -140,12 +140,12 @@ I used the rockyou.txt wordlist because it's one of the most popular real-world 
 > **Answer:** `delicious`
 
 
-# Task 10: Explaining Diffie Hellman Key Exchange
+## Task 10: Explaining Diffie Hellman Key Exchange
 
 I understand how Diffie Hellman Key Exchange works at a basic level
 > **Answer:** `No answer needed`
 
-# Task 11: PGP, GPG and AES
+## Task 11: PGP, GPG and AES
 
 Time to try some GPG. Download the archive attached and extract it somewhere sensible.
 > **Answer:** `No answer needed`
@@ -189,7 +189,7 @@ This task demonstrates the use of GPG (GNU Privacy Guard), which is a free imple
 In this challenge, the .gpg file was encrypted using the recipient’s public key. By importing the provided tryhackme.key (private key) into GPG, I was able to decrypt the file and retrieve the hidden message. This showcases a real-world application of encryption used in secure email, file sharing, and digital signatures, where confidentiality and authenticity are essential.
 
 
-# Task 12: The Future - Quantum Computers and Encryption
+## Task 12: The Future - Quantum Computers and Encryption
 
 I understand that quantum computers affect the future of encryption. I know where to look if I want to learn more.
 > **Answer:** `No answer needed`
