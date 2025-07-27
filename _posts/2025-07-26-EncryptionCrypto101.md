@@ -71,7 +71,7 @@ What was the result of the attempt to make DES more secure so that it could be u
 > **Answer:** `Triple DES` <br>
 Triple Data Encryption Standard (Triple DES or 3DES) is a symmetric block cipher-based cryptography standard that uses fixed length keys with three passes of the DES algorithm.
 
-Source: [The Triple DES Intro: Triple Data Encryption Standard](https://www.splunk.com/en_us/blog/learn/triple-des-data-encryption-standard.html)
+Source:  [The Triple DES Intro: Triple Data Encryption Standard](https://www.splunk.com/en_us/blog/learn/triple-des-data-encryption-standard.html)
 
 Is it ok to share your public key? Yea/Nay
 > **Answer:** `Yea` <br>
@@ -115,17 +115,22 @@ Crack the password with John The Ripper and rockyou, what's the passphrase for t
 
 2. Then, download the SSH Private Key file and visualise the content using `cat`command:
 
-![SSH file](../assets/img/Encrypto101_SSHKey.png)
+<figure class="text-center">
+  <img src="../assets/img/Encrypto101_SSHKey.png" alt="SSH file">
+  <figcaption><em>Download and view of the SSH Private Ket file</em></figcaption>
+</figure>
+
+![SSH file](../assets/img/Encrypto101_SSHKey.png)<br>
 _Download and view of the SSH Private Ket file_
 
 3. To crack the password using John the Ripper I cloned the repo using: 
 
-![Jhon The Ripper](../assets/img/Encrypto101_JTR.png)
+![Jhon The Ripper](../assets/img/Encrypto101_JTR.png) <br>
 _Clone Jhon The Ripper repo_
 
 4. Using Rockyou to crack it:
 
-![Rockyou](../assets/img/Encrypto101_Rockyou.png)
+![Rockyou](../assets/img/Encrypto101_Rockyou.png)<br>
 _Using rockyou.txt and getting the password_
 
 I used the rockyou.txt wordlist because it's one of the most popular real-world password lists, leaked from a historical data breach. It contains millions of common passwords that people actually use, making it highly effective for dictionary-based attacks in tools like John the Ripper.
@@ -147,23 +152,23 @@ Time to try some GPG. Download the archive attached and extract it somewhere sen
 
 1. Download the file and unziping the task files:
 
-![Unziping GPG files](../assets/img/Encrypto101_UnzipGPG.png)
+![Unziping GPG files](../assets/img/Encrypto101_UnzipGPG.png)<br>
 _Unziping GPG files_
 
 2. Then, import the key:
 
-![alt text](../assets/img/Encrypto101_ImportKey.png)
+![alt text](../assets/img/Encrypto101_ImportKey.png)<br>
 _Importing tryhackme.key_
 
 3. And decrypt the file:
 
-![Decrypt the GPG File](../assets/img/Encrypto101_GPGFile.png)
+![Decrypt the GPG File](../assets/img/Encrypto101_GPGFile.png)<br>
 _Decrypt the GPG File_
 
 
 4. Finally, viewing the file content:
 
-![Message](../assets/img/Encrypto101_Message.png)
+![Message](../assets/img/Encrypto101_Message.png)<br>
 _Message decoded_
 
 > **Answer:** `Pineapple`
